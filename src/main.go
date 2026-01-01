@@ -1,5 +1,6 @@
 package main
+import "fmt"
 
-import ("fmt")
-
-fmt.Print("Bienvenidos a Mi Programa")
+func main() {
+    fmt.Print("Bienvenidos a Mi Programa")
+}
