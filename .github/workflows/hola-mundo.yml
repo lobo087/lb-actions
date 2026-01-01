@@ -1,0 +1,19 @@
+name: Ejecutar App Go
+
+on: [push] # Se ejecuta cada vez que subes cambios
+
+jobs:
+  run-app:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar codigo
+        uses: actions/checkout@v4
+
+      - name: Configurar Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.24' # Versión estable 
+
+      - name: Ejecutar programa
+        # Usamos el path relativo al directorio raiz del repo
+        run: go run src/main.go
