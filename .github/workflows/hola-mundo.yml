@@ -1,5 +1,5 @@
 name: Ejecutar App Go
-
+run-name: Primer Workflow
 on: [push] # Se ejecuta cada vez que subes cambios
 
 jobs:
